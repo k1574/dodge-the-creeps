@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://res/fnt/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://HUD.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -0.280609
+margin_bottom = -0.28064
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreLabel" type="Label" parent="."]
+margin_left = 128.162
+margin_top = 15.1352
+margin_right = 348.162
+margin_bottom = 93.1352
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="Label" parent="."]
+margin_left = 4.9187
+margin_top = 338.651
+margin_right = 463.919
+margin_bottom = 497.651
+custom_fonts/font = SubResource( 1 )
+text = "Dodge the creeps"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="Button" parent="."]
+margin_left = 138.676
+margin_top = 530.057
+margin_right = 340.676
+margin_bottom = 652.057
+custom_fonts/font = SubResource( 1 )
+text = "Start"
+
+[node name="MessageTimer" type="Timer" parent="."]
